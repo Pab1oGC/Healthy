@@ -1,0 +1,74 @@
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Registro de Pacientes</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <div class="card card-primary">
+            <div class="card-header">
+                <h3 class="card-title">Nuevo Paciente</h3>
+            </div>
+            <form id="patientForm">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="patientName">Nombre</label>
+                        <input type="text" class="form-control" id="patientName" placeholder="Nombre del Paciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="patientFirstSurname">Primer Apellido</label>
+                        <input type="text" class="form-control" id="patientFirstSurname" placeholder="Primer Apellido del Paciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="patientSecondSurname">Segundo Apellido</label>
+                        <input type="text" class="form-control" id="patientSecondSurname" placeholder="Segundo Apellido del Paciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="patientBirthdate">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="patientBirthdate" placeholder="Fecha de Nacimiento del Paciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="patientGender">Género</label>
+                        <select class="form-control" id="patientGender">
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientIdentity">Carnet de Identidad</label>
+                        <input type="text" class="form-control" id="patientIdentity" placeholder="Carnet de Identidad del Paciente">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Lista de Pacientes</h3>
+            </div>
+            <div class="card-body">
+                <table id="patientsTable" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Primer Apellido</th>
+                            <th>Segundo Apellido</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Género</th>
+                            <th>Carnet de Identidad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

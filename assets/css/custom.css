@@ -1,0 +1,26 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+}
+
+.large-box {
+    height: calc(45vh - 20px); /* Adjust height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+.large-box .inner {
+    text-align: center;
+}
+
+.large-box .icon {
+    font-size: 5rem;
+}
